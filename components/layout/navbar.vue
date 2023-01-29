@@ -58,6 +58,13 @@
 				<li class="nav-item text-center">
 					<a class="nav-link" href="#sobre"> Sobre </a>
 				</li>
+				<li class="nav-item">
+					<a href="http://portalksiconsultas.com/"
+						target="_blank"
+						class="nav-link btn btn-outline-primary rounded-lg btn-blue-primary fw-light text-white">
+						Acessar
+					</a>
+				</li>
 			</ul>
 		</div>
 	</nav>

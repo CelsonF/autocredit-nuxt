@@ -67,7 +67,7 @@
 		</section>
 
 		<section
-			class="container-fluid container-lg low-opacity-bg-image"
+			class="container-fluid container-lg low-opacity-bg-image pb-5"
 			id="servico">
 			<h2 class="text-white text-center fw-bold pt-4">Nossos Produtos</h2>
 
@@ -92,7 +92,7 @@
 							class="icons-service d-flex justify-content-center align-items-center my-4">
 							<img
 								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/relatorio-credito.svg"
+								src="../assets/images/icons/license-drive.svg"
 								alt="Relatório de Crédito" />
 						</div>
 						<div class="card-body">
@@ -106,7 +106,7 @@
 							class="icons-service d-flex justify-content-center align-items-center my-4">
 							<img
 								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/relatorio-credito.svg"
+								src="../assets/images/icons/infobusca.svg"
 								alt="Relatório de Crédito" />
 						</div>
 						<div class="card-body">
@@ -242,6 +242,7 @@
 				</div>
 			</div>
 		</section>
+
 	</main>
 
 </template>
