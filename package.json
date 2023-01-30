@@ -6,7 +6,7 @@
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare",
-		 "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+		"deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
 	},
 	"devDependencies": {
 		"nuxt": "^3.1.0"
