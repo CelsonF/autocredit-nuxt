@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-css:[
+	css:[
 	'@/assets/css/base.css',
 	'@/assets/fonts/typography.css',
 ],

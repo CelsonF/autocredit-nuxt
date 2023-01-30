@@ -102,7 +102,7 @@
            class=""
            id="path13" /><path
            d="M 0,0 H 180.198"
-           style="stroke-width:19.78050173;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:9.5;stroke-dasharray:none;stroke-opacity:1;stroke:#000000;fill:none"
+           style="stroke-width:19.78050173;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:9.5;stroke-dasharray:none;stroke-opacity:1;stroke:#FFFFFF;fill:none"
            transform="translate(104.377,209.507)"
            fill="none"
            stroke="#FFFFFF"
@@ -154,7 +154,7 @@
            stroke-miterlimit="10"
            stroke-dasharray="none"
            stroke-opacity=""
-           data-original="#000000"
+           data-original="#FFFFFF"
            class=""
            id="path21" /><path
            d="m 0,0 c 0,-5.522 -4.477,-10 -10,-10 -5.522,0 -10,4.478 -10,10 0,5.523 4.478,10 10,10 C -4.477,10 0,5.523 0,0"
