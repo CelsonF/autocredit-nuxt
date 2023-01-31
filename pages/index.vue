@@ -67,11 +67,12 @@
 		</section>
 
 		<section
-			class="container-fluid container-lg low-opacity-bg-image pb-5"
+			class="container-fluid low-opacity-bg-image pb-5"
 			id="servico">
 			<h2 class="text-white text-center fw-bold pt-4">Nossos Produtos</h2>
 
-			<div class="row">
+			<div class="container">
+				<div class="row">
 				<div class="col-12 col-md-4 col-lg-3 mt-5">
 					<div class="card align-items-center">
 						<div
@@ -241,8 +242,25 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</section>
 
+		<section class="container-fluid low-bg-image-about justify-content-center  pt-5" id="sobre">
+			<h2 class="fw-bold py-2 text-center  mb-5"> Sobre </h2>	
+			<div class="container">
+				<div class="row align-items-center">
+				<div class="col-12 col-md-6 fs-5">
+					<p class> A Autocredit é uma empresa que atua no mercado de consulta veicular e análise de credito, 
+						sempre trabalhando para satisfazer as necessidades de seus clientes, trazendo consultas 
+						atualizadas, segura e confiável, contando com uma vasta base de dodos robusta e segura.   
+					</p>
+				</div>
+				<div class="col-12 col-md-6"> 
+					<img class="img-fluid" src="../assets/images/car_blue.png" alt="carro azul">
+				</div>
+			</div>
+			</div>
+		</section>
 	</main>
 
 </template>
@@ -271,7 +289,7 @@
 }
 
 .low-opacity-bg-image {
-	--bg-image: url("../assets/images//business-man-fullhd.jpg");
+	--bg-image: url("../assets/images/business-man-fullhd.jpg");
 	--bg-image-opacity: 0.25;
 
 	background-color: var(--color-primary-3);
@@ -289,8 +307,42 @@
 
 	opacity: var(--bg-image-opacity);
 
+
 	background-image: var(--bg-image);
 	background-size: cover;
 	background-position: center;
 }
+
+
+.low-bg-image-about {
+	min-height: 82vh; 
+	--bg-image: url("../assets/images/bg-squares.svg");
+	--bg-image-second: url("../assets/images/blue-triangles.svg");
+	--bg-image-opacity-about: 0.25;
+
+	background-color: #FFF;
+
+	background-repeat: no-repeat;
+
+	position: relative;
+
+	isolation: isolate;
+}
+
+
+.low-bg-image-about::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+
+	opacity: var(--bg-image-opacity-about);
+
+	background-repeat: no-repeat;
+	background-image: var(--bg-image),var(--bg-image-second);
+	background-size: contain;
+	background-position: left , right;
+}
+
+
 </style>

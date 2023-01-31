@@ -5,8 +5,8 @@
 			class="container-fluid justify-content-between justify-content-lg-around">
 			<a class="navbar-brand me-0" href="#">
 				<img
-					src="../../assets/images/LOGO_PNG.png"
-					alt="Bootstrap"
+					src="../../assets/images/autocredit-logo.png"
+					alt="autocredit"
 					width="160"
 					height="100" />
 			</a>
