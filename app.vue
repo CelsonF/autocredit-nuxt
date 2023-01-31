@@ -19,7 +19,7 @@ useHead({
         {
             hid: 'description',
             name: 'description',
-            content: 'Autocredit a sua empresa de consulta veicular e análise de crédito.'
+            content: 'A Autocredit é uma empresa que atua no mercado de consulta veicular e análise de credito, sempre trabalhando para satisfazer as necessidades de seus clientes, trazendo consultas atualizadas, segura e confiável, contando com uma vasta base de dodos robusta e segura.'
         },
         { name: 'format-detection', content: 'telephone=no' },
 

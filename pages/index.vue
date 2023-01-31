@@ -250,7 +250,7 @@
 			<div class="container">
 				<div class="row align-items-center">
 				<div class="col-12 col-md-6 fs-5">
-					<p class> A Autocredit é uma empresa que atua no mercado de consulta veicular e análise de credito, 
+					<p> A Autocredit é uma empresa que atua no mercado de consulta veicular e análise de credito, 
 						sempre trabalhando para satisfazer as necessidades de seus clientes, trazendo consultas 
 						atualizadas, segura e confiável, contando com uma vasta base de dodos robusta e segura.   
 					</p>
