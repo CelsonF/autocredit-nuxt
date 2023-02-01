@@ -73,199 +73,216 @@
 
 			<div class="container">
 				<div class="row">
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/relatorio-credito.svg"
-								alt="Relatório de Crédito" />
+					<div class="col-12 col-md-4 col-lg-3 mt-5">
+						<div class="card align-items-center">
+							<div
+								class="icons-service d-flex justify-content-center align-items-center my-4">
+								<img
+									class="img-fluid icons-witdh-service"
+									src="../assets/images/icons/relatorio-credito.svg"
+									alt="Relatório de Crédito" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Relatório de Crédito</h5>
+							</div>
 						</div>
-						<div class="card-body">
-							<h5 class="card-title">Relatório de Crédito</h5>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 mt-5">
+						<div class="card align-items-center">
+							<div
+								class="icons-service d-flex justify-content-center align-items-center my-4">
+								<img
+									class="img-fluid icons-witdh-service"
+									src="../assets/images/icons/license-drive.svg"
+									alt="Consulta Veicular" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Consulta Veicular</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 mt-5">
+						<div class="card align-items-center">
+							<div
+								class="icons-service d-flex justify-content-center align-items-center my-4">
+								<img
+									class="img-fluid icons-witdh-service"
+									src="../assets/images/icons/infobusca.svg"
+									alt="Infobusca" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Infobusca</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 mt-5">
+						<div class="card align-items-center">
+							<div
+								class="icons-service d-flex justify-content-center align-items-center my-4">
+								<img
+									class="img-fluid icons-witdh-service"
+									src="../assets/images/icons/negativacao.svg"
+									alt="Negativação" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Negativação</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 mt-5">
+						<div class="card align-items-center">
+							<div
+								class="icons-service d-flex justify-content-center align-items-center my-4">
+								<img
+									class="img-fluid icons-witdh-service"
+									src="../assets/images/icons/protesto-titulos.svg"
+									alt="Protesto de Títulos" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Protesto de Títulos</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 mt-5">
+						<div class="card align-items-center">
+							<div
+								class="icons-service d-flex justify-content-center align-items-center my-4">
+								<img
+									class="img-fluid icons-witdh-service"
+									src="../assets/images/icons/acoes-judiciais.svg"
+									alt="Ações Judiciais" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Ações Judiciais</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 mt-5">
+						<div class="card align-items-center">
+							<div
+								class="icons-service d-flex justify-content-center align-items-center my-4">
+								<img
+									class="img-fluid icons-witdh-service"
+									src="../assets/images/icons/pesquisa-imoveis.svg"
+									alt="Localizador de Imóveis" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Localizador de Imóveis</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 mt-5">
+						<div class="card align-items-center">
+							<div
+								class="icons-service d-flex justify-content-center align-items-center my-4">
+								<img
+									class="img-fluid icons-witdh-service"
+									src="../assets/images/icons/certificado-digital.svg"
+									alt="Certificado Digital" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Certificado Digital</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 mt-5">
+						<div class="card align-items-center">
+							<div
+								class="icons-service d-flex justify-content-center align-items-center my-4">
+								<img
+									class="img-fluid icons-witdh-service"
+									src="../assets/images/icons/atpv-e.svg"
+									alt="ATPV-E" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">ATPV-E</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 mt-5">
+						<div class="card align-items-center">
+							<div
+								class="icons-service d-flex justify-content-center align-items-center my-4">
+								<img
+									class="img-fluid icons-witdh-service"
+									src="../assets/images/icons/documento-carro.svg"
+									alt="CRLV Emissão Documento Carro" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">CRLV Emissão Documento Carro</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 mt-5">
+						<div class="card align-items-center">
+							<div
+								class="icons-service d-flex justify-content-center align-items-center my-4">
+								<img
+									class="img-fluid icons-witdh-service"
+									src="../assets/images/icons/venda-carro.svg"
+									alt="Comunicado de Vendas de Veículos" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Comunicado de Vendas de Veículos</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 mt-5">
+						<div class="card align-items-center">
+							<div
+								class="icons-service d-flex justify-content-center align-items-center my-4">
+								<img
+									class="img-fluid icons-witdh-service"
+									src="../assets/images/icons/pesquisa-carro.svg"
+									alt="Localizador de Veículos" />
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Localizador de Veículos</h5>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/license-drive.svg"
-								alt="Consulta Veicular" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Consulta Veicular</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/infobusca.svg"
-								alt="Infobusca" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Infobusca</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/negativacao.svg"
-								alt="Negativação" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Negativação</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/protesto-titulos.svg"
-								alt="Protesto de Títulos" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Protesto de Títulos</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/acoes-judiciais.svg"
-								alt="Ações Judiciais" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Ações Judiciais</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/pesquisa-imoveis.svg"
-								alt="Localizador de Imóveis" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Localizador de Imóveis</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/certificado-digital.svg"
-								alt="Certificado Digital" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Certificado Digital</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/atpv-e.svg"
-								alt="ATPV-E" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">ATPV-E</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/documento-carro.svg"
-								alt="CRLV Emissão Documento Carro" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">CRLV Emissão Documento Carro</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/venda-carro.svg"
-								alt="Comunicado de Vendas de Veículos" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Comunicado de Vendas de Veículos</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/pesquisa-carro.svg"
-								alt="Localizador de Veículos" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Localizador de Veículos</h5>
-						</div>
-					</div>
-				</div>
-			</div>
 			</div>
 		</section>
 
-		<section class="container-fluid low-bg-image-about justify-content-center  pt-5" id="sobre">
-			<h2 class="fw-bold py-2 text-center  mb-5"> Sobre </h2>	
-			<div class="container">
-				<div class="row align-items-center">
-				<div class="col-12 col-md-6 fs-5">
-					<p> A Autocredit é uma empresa que atua no mercado de consulta veicular e análise de credito, 
-						sempre trabalhando para satisfazer as necessidades de seus clientes, trazendo consultas 
-						atualizadas, segura e confiável, contando com uma vasta base de dodos robusta e segura.   
-					</p>
+		<section class="container-fluid d-flex low-bg-image-about d-flex flex-column justify-content-center pt-5 "
+			id="sobre">
+			<h2 class="fw-bold py-2 text-center  mb-5"> Sobre </h2>
+			<div class="container d-flex vh-lg-60">
+				<div class="row flex-md-column flex-lg-row align-items-center">
+					<div class="col-12 col-md-6 fs-5">
+						<p class="text-center text-lg-start  "> A Autocredit é uma empresa que atua no mercado de consulta veicular
+							e
+							análise de
+							credito,
+							sempre trabalhando para satisfazer as necessidades de seus clientes, trazendo consultas
+							atualizadas, segura e confiável, contando com uma vasta base de dodos robusta e segura.
+						</p>
+					</div>
+					<div class="col-12 col-md-6">
+						<img class="img-fluid" src="../assets/images/car_blue.png" alt="carro azul">
+					</div>
 				</div>
-				<div class="col-12 col-md-6"> 
-					<img class="img-fluid" src="../assets/images/car_blue.png" alt="carro azul">
-				</div>
-			</div>
 			</div>
 		</section>
+
+		<div class="whatsapp-button fixed-bottom d-flex justify-content-end me-2 mb-2 me-lg-3 mb-lg-3">
+			<a aria-label="Chat on WhatsApp" target="_blank"
+				href="https://wa.me/5531973620350?text=Gostaria%20de%20saber%20mais%20sobre%20a%20Autocredit."
+				class="rounded-circle box-whatsapp">
+				<img class="img-fluid icon-whatsapp" src="../assets/images/icons/whatsapp-autocredit.svg"
+					alt="Icone de whats app flutuante ">
+			</a>
+		</div>
 	</main>
 
 </template>
 
 <style scoped>
+.vh-lg-60 {
+	min-height: 70vh;
+}
+
 .icons {
 	width: 6.25rem;
 	height: 6.25rem;
@@ -282,6 +299,27 @@
 	border-radius: 50%;
 
 	background-color: var(--color-primary-3);
+}
+
+.icon-whatsapp {
+	width: 2.5rem;
+	height: 2.5em;
+
+
+	background-color: transparent;
+}
+
+.box-whatsapp {
+	transform: scale(0.9);
+	transition: 0.3s;
+}
+
+.box-whatsapp:hover {
+	background-color: #dedede;
+	padding: 0.7rem;
+	transform: scale(1);
+	transition: 0.3s;
+	box-shadow: inset 0px 1px 5px #141132;
 }
 
 .icons-witdh-service {
@@ -315,7 +353,6 @@
 
 
 .low-bg-image-about {
-	min-height: 82vh; 
 	--bg-image: url("../assets/images/bg-squares.svg");
 	--bg-image-second: url("../assets/images/blue-triangles.svg");
 	--bg-image-opacity-about: 0.25;
@@ -339,10 +376,18 @@
 	opacity: var(--bg-image-opacity-about);
 
 	background-repeat: no-repeat;
-	background-image: var(--bg-image),var(--bg-image-second);
+	background-image: var(--bg-image), var(--bg-image-second);
 	background-size: contain;
-	background-position: left , right;
+	background-position: left, right;
 }
 
 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.icon-whatsapp {
+		width: 3rem;
+		height: 3rem;
+	}
+}
 </style>
