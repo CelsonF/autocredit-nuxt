@@ -14,9 +14,9 @@ import Servicos from "~/pages/servicos.vue"
 		</div>
 
 		<section class="container-xl py-5">
-			<h2 class="text-center py-5 fw-bold">
+			<h1 class="text-center py-5 fw-bold">
 				Como são as consultas da Autocredit ?
-			</h2>
+			</h1>
 			<div class="row pt-4 pb-3">
 				<div class="col-12 col-md-4">
 					<div class="d-flex flex-column align-items-center">
@@ -75,7 +75,7 @@ import Servicos from "~/pages/servicos.vue"
 
 		<section class="container-fluid d-flex low-bg-image-about d-flex flex-column justify-content-center pt-5 "
 			id="sobre">
-			<h2 class="fw-bold py-2 text-center  mb-5"> Sobre </h2>
+			<h1 class="fw-bold py-2 text-center  mb-5"> Sobre </h1>
 			<div class="container d-flex vh-lg-60">
 				<div class="row flex-md-column flex-lg-row align-items-center">
 					<div class="col-12 col-md-6 fs-5">

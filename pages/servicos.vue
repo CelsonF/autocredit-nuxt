@@ -2,7 +2,7 @@
     <section
 			class="container-fluid low-opacity-bg-image pb-5"
 			id="servico">
-			<h2 class="text-white text-center fw-bold pt-4">Nossos Produtos</h2>
+			<h1 class="text-white text-center fw-bold pt-4">Nossos Produtos</h1>
 
 			<div class="container">
 				<div class="row">
