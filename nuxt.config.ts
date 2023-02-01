@@ -1,8 +1,10 @@
+const baseUrl = 'https://autocredit.com.br/'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
         // Simple usage
         ['@funken-studio/sitemap-nuxt-3', { generateOnBuild: true }],
+        ['@nuxtjs/robots', { configPath: "~/config/robots.config" }]
     ],
 	css:[
 	'@/assets/css/base.css',
