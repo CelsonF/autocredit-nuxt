@@ -2,20 +2,7 @@
 export default defineNuxtConfig({
     modules: [
         // Simple usage
-        '@nuxtjs/robots',
-    
-        // With options
-        ['@nuxtjs/robots', [
-            {UserAgent: 'Googlebot'},
-            {Disallow:'/nogooglebot/'},
-            {UserAgent: '*'},
-            {Allow: '/' },
-            {Allow: '/auto' },
-            {Allow: '/autocredit' },
-            {Allow: '/credit' },
-            { BlankLine: true },
-            { Comment: 'Comment here'},
-        ]]
+        ['@funken-studio/sitemap-nuxt-3', { generateOnBuild: true }],
     ],
 	css:[
 	'@/assets/css/base.css',

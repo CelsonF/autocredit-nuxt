@@ -1,11 +1,3 @@
-<script setup lang="ts">
-useHead({
-    meta:[
-        {name:'description',content:'Os serviços da Autocredit contém, vários tipos de consultas como: Relatório de Crédito, Consulta veicular, infobusca, Negativação, Protesto de Títulos , Ações Judiciais, Localizador de imóveis, certificado digital , ATPV-E , CRLV - Emissão de documento de carro , Comunicado de vendas de veículos, localizador de veículos'}
-    ]
-})
-</script>
-
 <template>
     <section
 			class="container-fluid low-opacity-bg-image pb-5"
