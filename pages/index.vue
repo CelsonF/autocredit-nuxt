@@ -13,8 +13,8 @@ import Servicos from "~/pages/servicos.vue"
 			</div>
 		</div>
 
-		<section class="container-xl py-5">
-			<h1 class="text-center py-5 fw-bold">
+		<section class="container-xl py-5  ">
+			<h1 class="text-center py-5">
 				Como são as consultas da Autocredit ?
 			</h1>
 			<div class="row pt-4 pb-3">
@@ -71,11 +71,11 @@ import Servicos from "~/pages/servicos.vue"
 			</div>
 		</section>
 
-		<Servicos/>
+		<Servicos />
 
 		<section class="container-fluid d-flex low-bg-image-about d-flex flex-column justify-content-center pt-5 "
 			id="sobre">
-			<h1 class="fw-bold py-2 text-center  mb-5"> Sobre </h1>
+			<h1 class="py-2 text-center  mb-5"> Sobre </h1>
 			<div class="container d-flex vh-lg-60">
 				<div class="row flex-md-column flex-lg-row align-items-center">
 					<div class="col-12 col-md-6 fs-5">

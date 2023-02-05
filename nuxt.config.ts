@@ -6,9 +6,9 @@ export default defineNuxtConfig({
         ['@funken-studio/sitemap-nuxt-3', { generateOnBuild: true }],
         ['@nuxtjs/robots', { configPath: "~/config/robots.config" }]
     ],
-	css:[
-	'@/assets/css/base.css',
-	'@/assets/fonts/typography.css',
+    css:[
+        '@/assets/css/base.css',
+        '@/assets/fonts/typography.css',
     ],
 app:{
 	head:{
@@ -19,8 +19,8 @@ app:{
     },
     meta: [
         { charset: 'utf-8' },
-        { 
-            name: 'viewport', 
+        {
+            name: 'viewport',
             content: 'width=device-width, initial-scale=1'
         },
         {
@@ -28,7 +28,7 @@ app:{
             name: 'description',
             content: 'A Autocredit é uma empresa que atua no mercado de consulta veicular e análise de credito, sempre trabalhando para satisfazer as necessidades de seus clientes, trazendo consultas atualizadas, segura e confiável, contando com uma vasta base de dodos robusta e segura.'
         },
-        { 
+        {
             name: 'format-detection',
             content: 'telephone=no' },
         {
@@ -36,64 +36,66 @@ app:{
             content:'TWmCgtZYovQZp9MvHdPMXmMDS8atubA9o4TIzbasShk'
         },
       //Open Graph
-    {
-        hid: 'og:site_name',
-        name: 'og:site_name',
-        content: 'Autocredit'
-    },
-    {
-        hid: 'og:type',
-        name: 'og:type',
-        content: 'website'
-    },
-    {
-        hid: 'og:url',
-        name: 'og:url',
-        content: 'https://autocredit.com.br/'
-    },
-    {
-        hid: 'og:title',
-        name: 'og:title',
-        content: 'Autocredit'
-    },
-    {
-        hid: 'og:description',
-        name: 'og:description',
-        content: 'Autocredit a sua empresa de consulta veicular e análise de crédito.'
-    },
-    {
-        hid: 'og:image',
-        name: 'og:image',
-        content: 'assets/images/autocredit-logo.png'
-    },
-	{ hid: 'og:image',
-		property:'og:image:width',
-		content:'160'
-	},
-	{ hid: 'og:image',
-		property:'og:image:height',
-		content:'100'
-	},
-	{
-        hid: 'og:image',
-        name: 'og:image',
-        content: 'assets/images/icons/svg_24h-4.svg'
-    },
-	{
-        hid: 'og:image',
-		property:'og:image:width',
-		content:'80'
-	},
-	{
-        hid: 'og:image',
-		property:'og:image:height',
-		content:'80'
-	},
-	{
-        hid: 'og:author',
-        name: 'og:author',
-        content: 'Time da Autocredit'
-	}
+        {
+            hid: 'og:site_name',
+            name: 'og:site_name',
+            content: 'Autocredit'
+        },
+        {
+            hid: 'og:type',
+            name: 'og:type',
+            content: 'website'
+        },
+        {
+            hid: 'og:url',
+            name: 'og:url',
+            content: 'https://autocredit.com.br/'
+        },
+        {
+            hid: 'og:title',
+            name: 'og:title',
+            content: 'Autocredit'
+        },
+        {
+            hid: 'og:description',
+            name: 'og:description',
+            content: 'Autocredit a sua empresa de consulta veicular e análise de crédito.'
+        },
+        {
+            hid: 'og:image',
+            name: 'og:image',
+            content: 'assets/images/autocredit-logo.png'
+        },
+        {
+          hid: 'og:image',
+          property:'og:image:width',
+          content:'160'
+        },
+        {
+          hid: 'og:image',
+          property:'og:image:height',
+          content:'100'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'assets/images/icons/svg_24h-4.svg'
+        },
+        {
+          hid: 'og:image',
+          property:'og:image:width',
+          content:'80'
+        },
+        {
+          hid: 'og:image',
+          property:'og:image:height',
+          content:'80'
+        },
+        {
+              hid: 'og:author',
+              name: 'og:author',
+              content: 'Time da Autocredit'
+        }
     ],
     link: [
     {
@@ -106,10 +108,10 @@ app:{
         rel: 'canonical',
         href: 'https://autocredit.com.br',
     },
-    { 
-		rel: 'icon',
-		type: 'image/x-icon',
-		href: 'assets/favicons/favicon.ico'
+    {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: 'assets/favicons/favicon.ico'
     },
     {
         rel: 'stylesheet',
