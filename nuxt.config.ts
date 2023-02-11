@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     ],
 app:{
 	head:{
-		title: 'Autocredit',
+		title: 'Home',
     titleTemplate: ' Autocredit | %s',
     htmlAttrs: {
         lang: 'pt-BR'

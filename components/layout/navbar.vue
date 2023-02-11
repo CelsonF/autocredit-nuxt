@@ -20,9 +20,6 @@
 					<a class="nav-link" href="#servico">Serviços</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#clientes">Clientes</a>
-				</li>
-				<li class="nav-item">
 					<a class="nav-link" href="#sobre">Sobre</a>
 				</li>
 			</ul>
@@ -30,6 +27,7 @@
 				href="http://portalksiconsultas.com/"
 				target="_blank"
 				class="btn btn-outline-primary rounded-pill btn-blue-primary fw-light d-none d-lg-flex text-white">
+				<img src="../../assets/images/icons/icon-singin.svg" class="pe-2" width="24" height="24" alt="entrar" />
 				Acessar
 			</a>
 			<button
@@ -53,15 +51,13 @@
 					<a class="nav-link" href="#servico">Serviço</a>
 				</li>
 				<li class="nav-item text-center">
-					<a class="nav-link" href="#clientes">Clientes</a>
-				</li>
-				<li class="nav-item text-center">
 					<a class="nav-link" href="#sobre"> Sobre </a>
 				</li>
 				<li class="nav-item">
-					<a href="http://portalksiconsultas.com/"
+					<a href="http://consultas.autocredit.com.br/"
 						target="_blank"
 						class="nav-link btn btn-outline-primary rounded-lg btn-blue-primary fw-light text-white">
+						<img src="../../assets/images/icons/icon-singin.svg" class="pe-2" width="24" height="24" alt="entrar" />
 						Acessar
 					</a>
 				</li>
