@@ -24,7 +24,7 @@
 				</li>
 			</ul>
 			<a
-				href="http://portalksiconsultas.com/"
+				href="http://consultas.autocredit.com.br/"
 				target="_blank"
 				class="btn btn-outline-primary rounded-pill btn-blue-primary fw-light d-none d-lg-flex text-white">
 				<img src="../../assets/images/icons/icon-singin.svg" class="pe-2" width="24" height="24" alt="entrar" />
