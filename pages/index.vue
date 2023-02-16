@@ -84,7 +84,7 @@ import Servicos from "~/pages/servicos.vue"
 							análise de
 							credito,
 							sempre trabalhando para satisfazer as necessidades de seus clientes, trazendo consultas
-							atualizadas, segura e confiável, contando com uma vasta base de dodos robusta e segura.
+							atualizadas, segura e confiável, contando com uma vasta base de dados robusta e segura.
 						</p>
 					</div>
 					<div class="col-12 col-md-6">
