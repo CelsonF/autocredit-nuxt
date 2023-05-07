@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Navbar from "~/components/layout/navbar.vue"
+import Slide from "~/components/layout/slide.vue"
 
 const emailWebsite = 'autocreditconsultas@gmail.com'
 const phoneNumber = '(31)97362-0350'
@@ -12,6 +13,7 @@ const phoneNumber = '(31)97362-0350'
 		<Navbar />
 	</header>
 	<slot />
+	<Slide />
 	<footer class="container-fluid bg-light">
 		<div class="container">
 			<div class="pt-5 pb-2">
