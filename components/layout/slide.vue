@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Glide from '@glidejs/glide'
+import Glide from '@glidejs/glide/dist/glide.esm'
 
 export default {
   name: 'Slide',
