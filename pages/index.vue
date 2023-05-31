@@ -1,18 +1,13 @@
 <script setup lang="ts">
 import Servicos from "~/pages/servicos.vue"
+import Carousel from "~/components/layout/carousel.vue"
+
 </script>
 
 <template>
 	<main>
-		<div class="container-fluid p-0" id="home">
-			<div class="d-flex justify-content-center">
-				<img
-					class="img-fluid"
-					src="../assets/images/background_blue.png"
-					alt="Lamborguine azul no fundo" />
-			</div>
-		</div>
-
+		<Carousel/>
+		
 		<section class="container-xl py-5  ">
 			<h1 class="text-center py-5">
 				Como são as consultas da Autocredit ?

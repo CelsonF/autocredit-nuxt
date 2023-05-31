@@ -20,8 +20,16 @@ export default {
   mounted() {
     const glide = new Glide('.glide', {
       type: 'carousel',
-      perView: 4,
+      perView: 3,
       autoplay: 2000,
+      breakpoints: {
+        800: {
+          perView: 2
+        },
+        480: {
+          perView: 1
+        }
+      }
     });
     glide.mount();
   },

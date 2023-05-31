@@ -1,16 +1,44 @@
-<script setup lang="ts">
+<script lang="ts">
+import { defineComponent, onMounted, reactive, toRefs ,ref } from "vue"
 import Navbar from "~/components/layout/navbar.vue"
 import Slide from "~/components/layout/slide.vue"
 
-const emailWebsite = 'autocreditconsultas@gmail.com'
-const phoneNumber = '(31)97362-0350'
+export default defineComponent({
+	components: {
+		Navbar,
+		Slide,
+	},
+	setup() {
+		const state = reactive({
+			emailWebsite:'autocreditconsultas@gmail.com',
+			phoneNumber:'(31)97362-0350',
+		})
+		const bgColor = ref('')
 
+		const scrollPage = (() => {
+			if(window.scrollY === 0) {
+				bgColor.value = "bg-transparent"
+			} else {
+				bgColor.value = "bg-light"
+			}
+		})
+		const getScrollY = (() => {
+			window.addEventListener('scroll', scrollPage)
+		})
+
+		onMounted(() => {
+			getScrollY()
+		})
+
+		return { ...toRefs(state),bgColor,scrollPage,getScrollY}
+	},
+})
 
 </script>
 
 <template>
-	<header class="sticky-top">
-		<Navbar />
+	<header class="fixed-top">
+		<Navbar :bg-menu="bgColor" />
 	</header>
 	<slot />
 	<Slide />

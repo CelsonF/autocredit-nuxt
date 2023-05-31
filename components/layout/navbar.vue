@@ -1,6 +1,7 @@
 <template>
 	<nav
-		class="navbar navbar-expand-lg shadow-sm bg-body-tertiary navbar-light bg-light">
+		:class="bgMenu"
+		class="navbar navbar-expand-lg shadow-sm bg-opacity-75">
 		<div
 			class="container-fluid justify-content-between justify-content-lg-around">
 			<a class="navbar-brand me-0" href="#">
@@ -14,13 +15,13 @@
 				class="navbar-nav nav-masthead gap-4 d-none d-lg-flex"
 				id="navbarNavExpand">
 				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="#home">Home</a>
+					<a class="nav-link text-light active" aria-current="page" href="#home">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#servico">Serviços</a>
+					<a class="nav-link text-light" href="#servico">Serviços</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#sobre">Sobre</a>
+					<a class="nav-link text-light" href="#sobre">Sobre</a>
 				</li>
 			</ul>
 			<a
@@ -45,13 +46,13 @@
 		<div class="collapse navbar-collapse" id="navbarToggleExternalContent">
 			<ul class="navbar-nav px-3 me-auto mb-2 mb-lg-0 d-lg-none">
 				<li class="nav-item text-center">
-					<a class="nav-link active" aria-current="page" href="#home">Home</a>
+					<a class="nav-link text-white active" aria-current="page" href="#home">Home</a>
 				</li>
 				<li class="nav-item text-center">
-					<a class="nav-link" href="#servico">Serviço</a>
+					<a class="nav-link text-white" href="#servico">Serviço</a>
 				</li>
 				<li class="nav-item text-center">
-					<a class="nav-link" href="#sobre"> Sobre </a>
+					<a class="nav-link text-white" href="#sobre"> Sobre </a>
 				</li>
 				<li class="nav-item">
 					<a href="http://consultas.autocredit.com.br/"
@@ -65,6 +66,19 @@
 		</div>
 	</nav>
 </template>
+
+<script lang="ts">
+import {defineComponent} from 'vue';
+export default defineComponent({
+	props: {
+		bgMenu: {
+			type: String,
+			required: true,
+		},
+	},
+});
+
+</script>
 
 <style>
 .btn-blue-primary {
