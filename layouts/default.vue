@@ -13,24 +13,33 @@ export default defineComponent({
 			emailWebsite:'autocreditconsultas@gmail.com',
 			phoneNumber:'(31)97362-0350',
 		})
-		const bgColor = ref('')
+		const bgColor = ref('');
+		const textColors = ref('');
+		const imgLogo = ref(true);
 
 		const scrollPage = (() => {
+			console.log("Algo foi montado")
 			if(window.scrollY === 0) {
-				bgColor.value = "bg-transparent"
+				bgColor.value = "bg-transparent",
+				textColors.value = "text-white",
+				imgLogo.value = true
 			} else {
-				bgColor.value = "bg-light"
+				bgColor.value = "bg-light shadow-sm filter-glassmorfism",
+				textColors.value = "text-black",
+				imgLogo.value = false
 			}
 		})
+
 		const getScrollY = (() => {
 			window.addEventListener('scroll', scrollPage)
 		})
 
-		onMounted(() => {
+		onMounted(() => {	
+			textColors.value = "text-white"
 			getScrollY()
 		})
 
-		return { ...toRefs(state),bgColor,scrollPage,getScrollY}
+		return { ...toRefs(state),bgColor,textColors,imgLogo,scrollPage,getScrollY}
 	},
 })
 
@@ -38,7 +47,7 @@ export default defineComponent({
 
 <template>
 	<header class="fixed-top">
-		<Navbar :bg-menu="bgColor" />
+		<Navbar :bg-menu="bgColor" :text-colors="textColors"  :img-logo="imgLogo"/>
 	</header>
 	<slot />
 	<Slide />
