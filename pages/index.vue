@@ -9,7 +9,7 @@ import Servicos from "~/pages/servicos.vue"
 				<img
 					class="img-fluid"
 					src="../assets/images/background_blue.png"
-					alt="Lamborguine azul no fundo" />
+					alt="Lamborguine azul" />
 			</div>
 		</div>
 
