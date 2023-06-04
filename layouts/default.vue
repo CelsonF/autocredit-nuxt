@@ -39,17 +39,13 @@ export default defineComponent({
 		})
 
 		const windowWitdhScreen = (() => {
-			if(window.outerWidth < 992) {
-				state.imgLogo = true
+			if(window.outerWidth < 992 && window.scrollY === 0) {
+				state.bgColor = "bg-light shadow-sm filter-glassmorfism",
 				state.textColors = "text-black",
 				state.toggleMenu = "text-black"
+				state.imgLogo = true
 			}
 		})
-		
-		const getWidthScreen = (() => {
-			window.addEventListener('resize', windowWitdhScreen)
-		})
-
 		
 
 		onMounted(() => {	
@@ -58,10 +54,10 @@ export default defineComponent({
 			state.toggleMenu = 'text-white'
 			state.typeMenu = "fixed-top"
 			getScrollY()
-			getWidthScreen()
+			windowWitdhScreen()
 		})
 
-		return { ...toRefs(state),scrollPage,getScrollY,getWidthScreen}
+		return { ...toRefs(state),scrollPage,getScrollY,windowWitdhScreen}
 	},
 })
 
