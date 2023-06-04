@@ -1,5 +1,5 @@
 <template>
-    <div id="carousel" class="carousel slide" data-bs-ride="true">
+    <div id="carousel" class="carousel slide show-menu-margin" data-bs-ride="true">
         <div class="carousel-indicators d-none d-md-flex">
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
                 aria-label="Slide 1"></button>
@@ -60,10 +60,20 @@
     font-size: x-large;
 }
 
+.show-menu-margin {
+    margin-top: 8rem;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .text-carousel {
         font-size: medium;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .show-menu-margin {
+        margin-top: 0;
     }
 }
 

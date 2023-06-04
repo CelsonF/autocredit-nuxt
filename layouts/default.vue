@@ -1,5 +1,4 @@
 <script lang="ts">
-import { text } from "stream/consumers"
 import { defineComponent, onMounted, reactive, toRefs  } from "vue"
 import Navbar from "~/components/layout/navbar.vue"
 import Slide from "~/components/layout/slide.vue"
@@ -21,7 +20,7 @@ export default defineComponent({
 		})
 	
 		const scrollPage = (() => {
-			if(window.scrollY === 0) {
+			if(window.scrollY === 0 && window.outerWidth > 992) {
 				state.bgColor = "bg-transparent",
 				state.imgLogo = false,
 				state.typeMenu = "fixed-top"
@@ -39,7 +38,17 @@ export default defineComponent({
 			window.addEventListener('scroll', scrollPage)
 		})
 
+		const windowWitdhScreen = (() => {
+			if(window.outerWidth < 992) {
+				state.imgLogo = true
+				state.textColors = "text-black",
+				state.toggleMenu = "text-black"
+			}
+		})
 		
+		const getWidthScreen = (() => {
+			window.addEventListener('resize', windowWitdhScreen)
+		})
 
 		
 
@@ -49,16 +58,17 @@ export default defineComponent({
 			state.toggleMenu = 'text-white'
 			state.typeMenu = "fixed-top"
 			getScrollY()
+			getWidthScreen()
 		})
 
-		return { ...toRefs(state),scrollPage,getScrollY}
+		return { ...toRefs(state),scrollPage,getScrollY,getWidthScreen}
 	},
 })
 
 </script>
 
 <template>
-	<header :class="typeMenu" >
+	<header :class="typeMenu">
 		<Navbar :bg-menu="bgColor" :text-colors="textColors"  :img-logo="imgLogo" :toggle-menu="toggleMenu"/>
 	</header>
 	<slot />
