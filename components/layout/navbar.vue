@@ -1,9 +1,9 @@
 <template>
-	<nav :class="bgMenu" class="navbar navbar-expand-lg bg-opacity-75 transition-3s">
+	<nav :class="bgMenu,showGlassmorfism" class="navbar navbar-expand-lg bg-opacity-75 transition-2s">
 		<div class="container-fluid justify-content-between justify-content-lg-around">
 			<a class="navbar-brand me-0" href="#">
-				<img v-if="imgLogo" src="../../assets/images/logo_blank.png" alt="autocredit" width="160" height="100" />
-				<img v-else src="../../assets/images/logo_dark.png" alt="autocredit" width="160" height="100" />
+				<img  v-if="imgLogo" src="../../assets/images/logo_dark.png" alt="autocredit" width="160" height="100" />
+				<img v-else src="../../assets/images/logo_blank.png" alt="autocredit" width="160" height="100" />
 			</a>
 			<ul class="navbar-nav nav-masthead gap-4 d-none d-lg-flex" id="navbarNavExpand">
 				<li class="nav-item">
@@ -23,15 +23,15 @@
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-				aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+				aria-expanded="false" aria-label="Toggle navigation" @click="showMenu()">
+				<i :class="toggleMenu" class="bi bi-list"></i>
 			</button>
 		</div>
 
-		<div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+		<div class="collapse navbar-collapse"  id="navbarToggleExternalContent">
 			<ul class="navbar-nav px-3 me-auto mb-2 mb-lg-0 d-lg-none">
 				<li class="nav-item text-center">
-					<a :class="textColors" class="nav-link active" aria-current="page" href="#home">Home</a>
+					<a :class="textColors" class="nav-link active" aria-current="page" href="#carousel">Home</a>
 				</li>
 				<li class="nav-item text-center">
 					<a :class="textColors" class="nav-link" href="#servico">Serviço</a>
@@ -53,8 +53,25 @@
 </template>
 
 <script lang="ts">
-import { defineComponent,onMounted} from 'vue';
+import { defineComponent, toRefs,reactive,ref} from 'vue';
 export default defineComponent({
+	setup() {
+		const state = reactive({
+			showGlassmorfism:'',
+		})
+
+		
+		const showMenu = () => {
+			if(state.showGlassmorfism == '' && window.screenY === 0) {
+				state.showGlassmorfism = 'filter-glassmorfism'
+			}
+			else {
+				state.showGlassmorfism = ''
+			}
+		}
+
+		return {...toRefs(state),showMenu,ref}
+	},
 	props: {
 		bgMenu: {
 			type: String,
@@ -68,6 +85,10 @@ export default defineComponent({
 			type: Boolean,
 			required: true,
 		},
+		toggleMenu :{
+			type: String,
+			required: true,
+		}
 	},
 });
 
@@ -81,8 +102,8 @@ export default defineComponent({
 	border-radius: 0 0 0.625rem 0.625rem;
 }
 
-.transition-3s {
-	transition: 0.3s;
+.transition-2s {
+	transition: 0.2s;
 }
 
 .btn-blue-primary {

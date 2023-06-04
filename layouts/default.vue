@@ -1,5 +1,6 @@
 <script lang="ts">
-import { defineComponent, onMounted, reactive, toRefs ,ref } from "vue"
+import { text } from "stream/consumers"
+import { defineComponent, onMounted, reactive, toRefs  } from "vue"
 import Navbar from "~/components/layout/navbar.vue"
 import Slide from "~/components/layout/slide.vue"
 
@@ -12,21 +13,25 @@ export default defineComponent({
 		const state = reactive({
 			emailWebsite:'autocreditconsultas@gmail.com',
 			phoneNumber:'(31)97362-0350',
+			bgColor : '',
+			textColors : '',
+			imgLogo : true,
+			typeMenu:'',
+			toggleMenu:''
 		})
-		const bgColor = ref('');
-		const textColors = ref('');
-		const imgLogo = ref(true);
-
+	
 		const scrollPage = (() => {
-			console.log("Algo foi montado")
 			if(window.scrollY === 0) {
-				bgColor.value = "bg-transparent",
-				textColors.value = "text-white",
-				imgLogo.value = true
+				state.bgColor = "bg-transparent",
+				state.imgLogo = false,
+				state.typeMenu = "fixed-top"
+				state.textColors = 'text-white'
+				state.toggleMenu = 'text-white'
 			} else {
-				bgColor.value = "bg-light shadow-sm filter-glassmorfism",
-				textColors.value = "text-black",
-				imgLogo.value = false
+				state.bgColor = "bg-light shadow-sm filter-glassmorfism",
+				state.textColors = "text-black",
+				state.toggleMenu = "text-black"
+				state.imgLogo = true
 			}
 		})
 
@@ -34,20 +39,27 @@ export default defineComponent({
 			window.addEventListener('scroll', scrollPage)
 		})
 
+		
+
+		
+
 		onMounted(() => {	
-			textColors.value = "text-white"
+			state.imgLogo = false
+			state.textColors = 'text-white'
+			state.toggleMenu = 'text-white'
+			state.typeMenu = "fixed-top"
 			getScrollY()
 		})
 
-		return { ...toRefs(state),bgColor,textColors,imgLogo,scrollPage,getScrollY}
+		return { ...toRefs(state),scrollPage,getScrollY}
 	},
 })
 
 </script>
 
 <template>
-	<header class="fixed-top">
-		<Navbar :bg-menu="bgColor" :text-colors="textColors"  :img-logo="imgLogo"/>
+	<header :class="typeMenu" >
+		<Navbar :bg-menu="bgColor" :text-colors="textColors"  :img-logo="imgLogo" :toggle-menu="toggleMenu"/>
 	</header>
 	<slot />
 	<Slide />
