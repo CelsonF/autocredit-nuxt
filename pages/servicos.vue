@@ -142,7 +142,7 @@
 					</div>
 				</div>
 				<div class="container-fluid">
-					<div class="row justify-content-center">
+					<div class="row justify-content-center mt-5">
 							<button class="btn transparent col-4 text-white" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 								Veja Mais <i class="bi bi-chevron-double-down"/>
 							</button>
@@ -153,6 +153,7 @@
 		</div>
 	</section>
 </template>
+
 
 <style scoped>
 .icons-service {
@@ -178,6 +179,7 @@
 
 .animate-card:hover {
 	transition: 0.5s;
+	cursor: pointer;
 	transform: translateY(-0.34rem);
 }
 

@@ -6,8 +6,8 @@ import Carousel from "~/components/layout/carousel.vue"
 
 <template>
 	<main>
-		<Carousel/>
-		
+		<Carousel />
+
 		<section class="container-xl py-5  ">
 			<h1 class="text-center py-5">
 				Como são as consultas da Autocredit ?
@@ -16,10 +16,7 @@ import Carousel from "~/components/layout/carousel.vue"
 				<div class="col-12 col-md-4">
 					<div class="d-flex flex-column align-items-center">
 						<div class="icons d-flex justify-content-center align-items-center">
-							<img
-								class="img-fluid"
-								src="../assets/images/icons/svg_24h-4.svg"
-								alt="consultas 24 por 7" />
+							<img class="img-fluid" src="../assets/images/icons/svg_24h-4.svg" alt="consultas 24 por 7" />
 						</div>
 						<div class="text-center px-4">
 							<h3 class="fw-bold py-3 m-0">Consultas 24/7</h3>
@@ -33,9 +30,7 @@ import Carousel from "~/components/layout/carousel.vue"
 				<div class="col-12 col-md-4">
 					<div class="d-flex flex-column align-items-center">
 						<div class="icons d-flex justify-content-center align-items-center">
-							<img
-								class="img-fluid"
-								src="../assets/images/icons/svg_facil_utilizacao-4.svg"
+							<img class="img-fluid" src="../assets/images/icons/svg_facil_utilizacao-4.svg"
 								alt="Consultas fácil e confiável" />
 						</div>
 						<div class="text-center px-4">
@@ -50,9 +45,7 @@ import Carousel from "~/components/layout/carousel.vue"
 				<div class="col-12 col-md-4">
 					<div class="d-flex flex-column align-items-center">
 						<div class="icons d-flex justify-content-center align-items-center">
-							<img
-								class="img-fluid"
-								src="../assets/images/icons/svg_preco_acessivel-4.svg"
+							<img class="img-fluid" src="../assets/images/icons/svg_preco_acessivel-4.svg"
 								alt="Preços acessíveis" />
 						</div>
 						<div class="text-center px-4">
@@ -74,7 +67,8 @@ import Carousel from "~/components/layout/carousel.vue"
 			<div class="container d-flex vh-lg-60">
 				<div class="row flex-md-column flex-lg-row align-items-center">
 					<div class="col-12 col-md-6 fs-5">
-						<p class="text-center text-lg-start  "> A Autocredit é uma empresa que atua no mercado de consulta veicular
+						<p class="text-center text-lg-start  "> A Autocredit é uma empresa que atua no mercado de consulta
+							veicular
 							e
 							análise de
 							credito,
@@ -97,26 +91,33 @@ import Carousel from "~/components/layout/carousel.vue"
 					alt="Icone de whats app flutuante ">
 			</a>
 		</div>
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-					aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								...
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary">Save changes</button>
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel"> Relatório de Crédito </h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body-lg">
+						<div class="container">
+							<div class="row">
+								<div class="col p-3">
+									Restrição Comercial, Pendencia financeira, Protesto Nacional, Anotações de restrições antigas,
+							Cheque
+							sem fundo, Score Positivo, Quadro societário, Participação em empresas, Faturamento Presumido,
+							Renda
+							Presumida, Pontualidade de pagamento, Capacidade Mensal de pagamento. Perfil sócio econômico.
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
 				</div>
+			</div>
+		</div>
 	</main>
-
 </template>
 
 <style scoped>
