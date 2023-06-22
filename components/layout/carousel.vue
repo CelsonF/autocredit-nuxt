@@ -11,30 +11,68 @@
             <div class="carousel-item active">
                 <img src="../../assets/images/slide-8.png" class="d-block w-100" alt="Pessoa analisando items de credito">
                 <div class="carousel-caption text-start">
-                    <p class="mb-0 text-carousel"> Relatório de Crédito </p>
-                    <ul class="mb-1">
-                            <li>
+                    <div class="mb-0 fs-title"> Relatório de Crédito </div>
+                    <ul class="mb-1 list-caption ps-0">
+                            <li class="list-items">
                                 Restrição Comercial
                             </li>
-                            <li>
+                            <li class="list-items">
                                 Pendencia financeira
                             </li>
-                            <li>
+                            <li class="list-items">
                                 Protesto Nacional
                             </li>
                     </ul>
-                    <button class="btn btn-outline-primary rounded-pill btn-blue-primary fw-light text-white"> Saiba mais </button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../../assets/images/slide-7.png" class="d-block w-100"
                     alt="Pessoa escrevendo e calculando alguma conta">
+                <div class="carousel-caption text-end">
+                    <div class="mb-0 fs-title"> Ações Judiciais </div>
+                    <ul class="mb-1 list-caption s-0">
+                            <li class="list-items">
+                                Antecedentes criminais
+                            </li>
+                            <li class="list-items">
+                                Ações Trabalhista
+                            </li>
+                    </ul>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="../../assets/images/slide-6.png" class="d-block w-100" alt="Pessoa com a mão no volante">
+                <div class="carousel-caption text-start">
+                    <div class="mb-0 fs-title"> Consulta veicular </div>
+                    <ul class="mb-1 list-caption ps-0">
+                            <li class="list-items">
+                                Leilão/sinistro
+                            </li>
+                            <li class="list-items">
+                                Débitos e multas
+                            </li>
+                            <li class="list-items">
+                                Histórico de roubo e furto
+                            </li>
+                            <li class="list-items">
+                                Renainf
+                            </li>
+                    </ul>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="../../assets/images/slide-5.png" class="d-block w-100" alt="Pessoa entrando em um carro">
+                <div class="carousel-caption text-end">
+                    <div class="mb-0 fs-title"> Comunicado de Vendas </div>
+                    <ul class="mb-1 list-caption s-0">
+                            <li class="list-items">
+                                ATPV-E
+                            </li>
+                            <li class="list-items">
+                                CRLV
+                            </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -64,10 +102,28 @@
     margin-top: 8rem;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .text-carousel {
-        font-size: medium;
+.fs-title{
+        font-size: 1.2rem;
+}
+    
+.list-items {
+        font-size: 0.7rem;
+}
+
+.list-caption li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .fs-title{
+        font-size: 2rem;
+    }
+    
+    .list-items {
+        font-size: 1rem;
     }
 }
 
@@ -75,6 +131,17 @@
     .show-menu-margin {
         margin-top: 0;
     }
+
+    .fs-title{
+        font-size: 4rem;
+    }
+    
+    .list-items {
+        font-size: 2rem;
+    }
 }
+
+
+
 
 </style>
