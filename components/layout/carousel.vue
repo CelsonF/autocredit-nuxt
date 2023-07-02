@@ -85,7 +85,7 @@
                 <img src="../../assets/images/slide-5.png" class="d-block w-100" alt="Pessoa entrando em um carro">
                 <div class="carousel-caption text-start">
                     <div class="mb-0 fs-title"> Comunicado de Vendas </div>
-                    <ul class="mb-1 list-caption s-0">
+                    <ul class="mb-1 list-caption ps-0">
                         <li class="list-items">
                             ATPV-E
                         </li>
@@ -114,6 +114,17 @@
     transition: 0.3s;
     letter-spacing: 0.2px;
 }
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 
 .text-carousel {
     font-size: x-large;
