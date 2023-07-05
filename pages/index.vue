@@ -1,6 +1,29 @@
-<script setup lang="ts">
+<script  lang="ts">
+import {defineComponent,reactive,toRefs} from "vue"
 import Servicos from "~/pages/servicos.vue"
 import Carousel from "~/components/layout/carousel.vue"
+import Modal from "~/components/layout/modal.vue"
+
+export default defineComponent({
+	components: {
+		Servicos,
+		Carousel,
+		Modal
+	},
+	setup() {
+		const state = reactive({
+			contentItem: {}
+		})
+
+		const modalDialog = ((content:Object) =>{
+			state.contentItem = content
+		})
+
+		return {
+			...toRefs(state),modalDialog
+		}
+	}
+})
 
 </script>
 
@@ -8,7 +31,7 @@ import Carousel from "~/components/layout/carousel.vue"
 	<main>
 		<Carousel />
 
-		<section class="container-xl py-5  ">
+		<section class="container-xl py-5">
 			<h1 class="text-center py-5">
 				Como são as consultas da Autocredit ?
 			</h1>
@@ -59,7 +82,7 @@ import Carousel from "~/components/layout/carousel.vue"
 			</div>
 		</section>
 
-		<Servicos />
+		<Servicos @modal-exibition="modalDialog"/>
 
 		<section class="container-fluid d-flex low-bg-image-about d-flex flex-column justify-content-center pt-5 "
 			id="sobre">
@@ -91,34 +114,12 @@ import Carousel from "~/components/layout/carousel.vue"
 					alt="Icone de whats app flutuante ">
 			</a>
 		</div>
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-lg modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h1 class="modal-title fs-5" id="exampleModalLabel"> Relatório de Crédito </h1>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body-lg">
-						<div class="container">
-							<div class="row">
-								<div class="col p-3">
-									Restrição Comercial, Pendencia financeira, Protesto Nacional, Anotações de restrições antigas,
-							Cheque
-							sem fundo, Score Positivo, Quadro societário, Participação em empresas, Faturamento Presumido,
-							Renda
-							Presumida, Pontualidade de pagamento, Capacidade Mensal de pagamento. Perfil sócio econômico.
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
+
+		<Modal :content="contentItem" />
 	</main>
 </template>
+
+
 
 <style scoped>
 .vh-lg-60 {
