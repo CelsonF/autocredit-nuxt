@@ -1,13 +1,20 @@
 <script lang="ts">
-import { defineComponent, toRefs, reactive } from 'vue';
-import servicesItems from "../content/itemsServices.json"
+import { defineComponent, onMounted, ref } from 'vue';
+import serviceItems from '../static/itemsServices.json'
+
 export default defineComponent({
 	setup() {
-		const state = reactive({
-			services: servicesItems
-		})
+		const services = ref();
+		
+		
 
-		return { ...toRefs(state) }
+		onMounted(() => {
+			services.value = serviceItems.contents;
+		});
+
+		return {
+			services
+		};
 	},
 });
 
@@ -20,14 +27,15 @@ export default defineComponent({
 
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-4 col-lg-3 mt-5" v-for="item in services">
-					<div data-bs-toggle="modal" data-bs-target="#modalService" class="card min-h animate-card  shadow-sm align-items-center" @click="$emit('modalExibition',item)">
+				<div class="col-12 col-md-4 col-lg-3 mt-5" v-for="item in services" :key="item.id">
+					<div data-bs-toggle="modal" data-bs-target="#modalService"
+						class="card min-h animate-card  shadow-sm align-items-center"
+						@click="$emit('modalExibition', item)">
 						<div class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img class="img-fluid icons-witdh-service" src="../assets/images/icons/relatorio-credito.svg"
-								alt="Relatório de Crédito" />
+							<img :src="'_nuxt/assets/images/icons/'+ item.icon" :alt="item.title" class="icons-witdh-service" />
 						</div>
 						<div class="card-body">
-							<h5 class="card-title">{{item.title}}</h5>
+							<h5 class="card-title">{{ item.title }}</h5>
 						</div>
 					</div>
 				</div>
@@ -88,5 +96,4 @@ export default defineComponent({
 	background-image: var(--bg-image);
 	background-size: cover;
 	background-position: center;
-}
-</style>
+}</style>
