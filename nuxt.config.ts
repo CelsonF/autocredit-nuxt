@@ -1,13 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { resolve } from 'path';
 export default defineNuxtConfig({
     modules: [
         // Simple usage
         ['@funken-studio/sitemap-nuxt-3', { generateOnBuild: true }],
         ['@nuxtjs/robots', { configPath: "~/config/robots.config" }],
     ],
+    alias:{
+        assets:"/<rootDir>/assets",
+    },
     css: [
-        '@/assets/css/base.css',
-        '@/assets/fonts/typography.css',
+        '~/assets/css/base.css',
+        '~/assets/fonts/typography.css',
     ],
     app: {
         head: {

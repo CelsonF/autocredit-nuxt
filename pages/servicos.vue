@@ -32,7 +32,7 @@ export default defineComponent({
 						class="card min-h animate-card  shadow-sm align-items-center"
 						@click="$emit('modalExibition', item)">
 						<div class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img :src="'../../assets/images/icons/'+ item.icon" :alt="item.title" class="icons-witdh-service" />
+							<img :src="'/icons/'+item.icon" :alt="item.title" class="icons-witdh-service" />
 						</div>
 						<div class="card-body">
 							<h5 class="card-title">{{ item.title }}</h5>

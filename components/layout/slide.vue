@@ -2,11 +2,10 @@
   <div class="glide my-4">
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">
-        <li class="glide__slide"><img
-            src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Logo_Receita_Federal_do_Brasil.svg"></li>
-        <li class="glide__slide"><img src="~/assets/images/denatran.svg"></li>
-        <li class="glide__slide"><img src="~/assets/images/serpro.svg"></li>
-        <li class="glide__slide"><img src="~/assets/images/miniteriodafazenda.svg"></li>
+        <li class="glide__slide"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Logo_Receita_Federal_do_Brasil.svg"></li>
+        <li class="glide__slide"><img src="../../assets/images/denatran.svg"></li>
+        <li class="glide__slide"><img src="../../assets/images/serpro.svg"></li>
+        <li class="glide__slide"><img src="../../assets/images/miniteriodafazenda.svg"></li>
       </ul>
     </div>
   </div>
