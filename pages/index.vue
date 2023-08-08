@@ -86,17 +86,13 @@ export default defineComponent({
 
 		<section class="container-fluid d-flex low-bg-image-about d-flex flex-column justify-content-center pt-5 "
 			id="sobre">
-			<h1 class="py-2 text-center  mb-5"> Sobre </h1>
+			<h1 class="py-2 text-center text-light mb-5"> Sobre </h1>
 			<div class="container d-flex vh-lg-60">
 				<div class="row flex-md-column flex-lg-row align-items-center">
 					<div class="col-12 col-md-6 fs-5">
-						<p class="text-center text-lg-start  "> A Autocredit é uma empresa que atua no mercado de consulta
-							veicular
-							e
-							análise de
-							credito,
-							sempre trabalhando para satisfazer as necessidades de seus clientes, trazendo consultas
-							atualizadas, segura e confiável, contando com uma vasta base de dados robusta e segura.
+						<p class="text-center text-lg-start text-light "> 
+							A Autocredit é uma empresa altamente especializada e confiável que se destaca no mercado de consultas veiculares e análise de crédito. Com um compromisso inabalável com a satisfação do cliente, a empresa se esforça continuamente para atender às diversas necessidades de seus clientes de maneira excepcional. Sua abordagem focada em oferecer consultas atualizadas, seguras e confiáveis estabelece um padrão elevado no setor.
+Uma das características distintivas da Autocredit é a sua ampla e sólida base de dados. Essa base de dados é o alicerce que permite à empresa fornecer informações detalhadas e precisas sobre veículos e dados de crédito. A robustez e a segurança dessa base de dados asseguram que os clientes possam confiar nas informações e análises apresentadas, tornando a Autocredit uma escolha confiável para quem busca informações confiáveis no campo automotivo e financeiro.
 						</p>
 					</div>
 					<div class="col-12 col-md-6">
@@ -165,7 +161,7 @@ export default defineComponent({
 	--bg-image-second: url("../assets/images/blue-triangles.svg");
 	--bg-image-opacity-about: 0.25;
 
-	background-color: #FFF;
+	background-color: #202020;
 
 	background-repeat: no-repeat;
 
