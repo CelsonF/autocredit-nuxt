@@ -5,8 +5,8 @@ import serviceItems from '../static/itemsServices.json'
 export default defineComponent({
 	setup() {
 		const services = ref();
-		
-		
+
+
 
 		onMounted(() => {
 			services.value = serviceItems.contents;
@@ -29,13 +29,13 @@ export default defineComponent({
 			<div class="row">
 				<div class="col-12 col-md-4 col-lg-3 mt-5" v-for="item in services" :key="item.id">
 					<div data-bs-toggle="modal" data-bs-target="#modalService"
-						class="card min-h animate-card  shadow-sm align-items-center"
+						class="card rounded-5 min-h animate-card shadow-sm align-items-center"
 						@click="$emit('modalExibition', item)">
-						<div class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img :src="'/icons/'+item.icon" :alt="item.title" class="icons-witdh-service" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">{{ item.title }}</h5>
+						<h5 class="card-title py-3 px-2 ">{{ item.title }}</h5>
+						<div class="card-body d-flex align-items-center pt-0">
+							<div class="icons-service d-flex justify-content-center align-items-center">
+								<img :src="'/icons/' + item.icon" :alt="item.title" class="icons-witdh-service" />
+							</div>
 						</div>
 					</div>
 				</div>
@@ -96,4 +96,5 @@ export default defineComponent({
 	background-image: var(--bg-image);
 	background-size: cover;
 	background-position: center;
-}</style>
+}
+</style>
