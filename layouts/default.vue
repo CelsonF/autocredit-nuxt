@@ -11,12 +11,14 @@ export default defineComponent({
 	setup() {
 		const state = reactive({
 			emailWebsite:'autocreditconsultas@gmail.com',
-			phoneNumber:'(31)97362-0350',
+			phoneNumber:'+55 (31) 3146-4534',
+			cellPhoneNumber:'+55 (31) 97362-0350',
 			bgColor : '',
 			textColors : '',
 			imgLogo : true,
 			typeMenu:'',
-			toggleMenu:''
+			toggleMenu:'',
+			actualYear: new Date().getFullYear()
 		})
 	
 		const scrollPage = (() => {
@@ -85,10 +87,17 @@ export default defineComponent({
 								</a>
 							</p>
 							<p>
-								<a class="no-style" href="tel:31 97362-0350">
+								<a class="no-style" href="tel:+55 31 3146-4534">
 									<img class="icons-footer" src="../assets/images/icons/telefone-autocredit.svg"
 										alt="autocreditconsultas@gmail.com">
 									{{ phoneNumber }}
+								</a>
+							</p>
+							<p>
+								<a class="no-style" href="tel:+55 31 97362-0350">
+									<img class="icons-footer" src="../assets/images/icons/telefone-autocredit.svg"
+										alt="autocreditconsultas@gmail.com">
+									{{ cellPhoneNumber }}
 								</a>
 							</p>
 						</form>
@@ -102,8 +111,8 @@ export default defineComponent({
 					</div>
 				</div>
 
-				<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-					<p>© 2022 Autocredit . Todos os direitos reservados.</p>
+				<div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top">
+					<p>© {{ actualYear }} Autocredit . Todos os direitos reservados.</p>
 				</div>
 			</div>
 		</div>
