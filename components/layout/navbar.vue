@@ -40,7 +40,7 @@
 					<a :class="textColors" class="nav-link" href="#sobre"> Sobre </a>
 				</li>
 				<li class="nav-item">
-					<a href="http://consultas.autocredit.com.br/" target="_blank"
+					<a href="http://autoc.painelconsultas.com/" target="_blank"
 						class="nav-link btn btn-outline-primary rounded-lg btn-blue-primary fw-light text-white">
 						<img src="../../assets/images/icons/icon-singin.svg" class="pe-2" width="24" height="24"
 							alt="entrar" />
