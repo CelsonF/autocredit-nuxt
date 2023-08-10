@@ -78,6 +78,12 @@
                         <li class="list-items">
                             Renainf
                         </li>
+                        <li class="list-items">
+                            Ação Judicial Trabalhista e Cível 
+                        </li>
+                        <li class="list-items">
+                            Débitos do proprietário
+                        </li>
                     </ul>
                 </div>
             </div>
