@@ -1,176 +1,41 @@
+<script lang="ts">
+import { defineComponent, onMounted, ref } from 'vue';
+import serviceItems from '../static/itemsServices.json'
+
+export default defineComponent({
+	setup() {
+		const services = ref();
+
+
+
+		onMounted(() => {
+			services.value = serviceItems.contents;
+		});
+
+		return {
+			services
+		};
+	},
+});
+
+</script>
+
+
 <template>
-	<section
-		class="container-fluid low-opacity-bg-image pb-5"
-		id="servico">
+	<section class="container-fluid low-opacity-bg-image pb-5" id="servico">
 		<h1 class="text-white text-center pt-4">Nossos Produtos</h1>
 
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card min-h animate-card  shadow-sm align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/relatorio-credito.svg"
-								alt="Relatório de Crédito" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Relatório de Crédito</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card min-h animate-card  shadow-sm align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/license-drive.svg"
-								alt="Consulta Veicular" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Consulta Veicular</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card min-h animate-card  shadow-sm align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/infobusca.svg"
-								alt="Infobusca" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Infobusca</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card min-h animate-card  shadow-sm align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/negativacao.svg"
-								alt="Negativação" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Negativação</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card min-h animate-card  shadow-sm align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/protesto-titulos.svg"
-								alt="Protesto de Títulos" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Protesto de Títulos</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card min-h animate-card  shadow-sm align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/acoes-judiciais.svg"
-								alt="Ações Judiciais" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Ações Judiciais</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card min-h animate-card  shadow-sm align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/pesquisa-imoveis.svg"
-								alt="Localizador de Imóveis" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Localizador de Imóveis</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card min-h animate-card  shadow-sm align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/certificado-digital.svg"
-								alt="Certificado Digital" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Certificado Digital</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card min-h animate-card  shadow-sm align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/atpv-e.svg"
-								alt="ATPV-E" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">ATPV-E</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card min-h animate-card  shadow-sm align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/documento-carro.svg"
-								alt="CRLV Emissão Documento Carro" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title text-center">CRLV <br> Emissão Documento Carro</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card min-h animate-card  shadow-sm align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/venda-carro.svg"
-								alt="Comunicado de Vendas de Veículos" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title text-center">Comunicado de Vendas de Veículos</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-4 col-lg-3 mt-5">
-					<div class="card min-h animate-card  shadow-sm align-items-center">
-						<div
-							class="icons-service d-flex justify-content-center align-items-center my-4">
-							<img
-								class="img-fluid icons-witdh-service"
-								src="../assets/images/icons/pesquisa-carro.svg"
-								alt="Localizador de Veículos" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Localizador de Veículos</h5>
+				<div class="col-12 col-md-4 col-lg-3 mt-5" v-for="item in services" :key="item.id">
+					<div data-bs-toggle="modal" data-bs-target="#modalService"
+						class="card rounded-5 min-h animate-card shadow-sm align-items-center"
+						@click="$emit('modalExibition', item)">
+						<h5 class="card-title py-3 px-2 ">{{ item.title }}</h5>
+						<div class="card-body d-flex align-items-center pt-0">
+							<div class="icons-service d-flex justify-content-center align-items-center">
+								<img :src="'/icons/' + item.icon" :alt="item.title" class="icons-witdh-service" />
+							</div>
 						</div>
 					</div>
 				</div>
@@ -178,6 +43,7 @@
 		</div>
 	</section>
 </template>
+
 
 <style scoped>
 .icons-service {
@@ -203,6 +69,7 @@
 
 .animate-card:hover {
 	transition: 0.5s;
+	cursor: pointer;
 	transform: translateY(-0.34rem);
 }
 
@@ -210,7 +77,7 @@
 	--bg-image: url("../assets/images/business-man-fullhd.jpg");
 	--bg-image-opacity: 0.25;
 
-	background-color: var(--color-primary-3);
+	background-color: #1c1c1c;
 
 	position: relative;
 

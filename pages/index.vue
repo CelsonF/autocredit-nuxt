@@ -1,19 +1,37 @@
-<script setup lang="ts">
+<script  lang="ts">
+import {defineComponent,reactive,toRefs} from "vue"
 import Servicos from "~/pages/servicos.vue"
+import Carousel from "~/components/layout/carousel.vue"
+import Modal from "~/components/layout/modal.vue"
+
+export default defineComponent({
+	components: {
+		Servicos,
+		Carousel,
+		Modal
+	},
+	setup() {
+		const state = reactive({
+			contentItem: {}
+		})
+
+		const modalDialog = ((content:Object) =>{
+			state.contentItem = content
+		})
+
+		return {
+			...toRefs(state),modalDialog
+		}
+	}
+})
+
 </script>
 
 <template>
 	<main>
-		<div class="container-fluid p-0" id="home">
-			<div class="d-flex justify-content-center">
-				<img
-					class="img-fluid"
-					src="../assets/images/background_blue.png"
-					alt="Lamborguine azul" />
-			</div>
-		</div>
+		<Carousel />
 
-		<section class="container-xl py-5  ">
+		<section class="container-xl py-5">
 			<h1 class="text-center py-5">
 				Como são as consultas da Autocredit ?
 			</h1>
@@ -21,10 +39,7 @@ import Servicos from "~/pages/servicos.vue"
 				<div class="col-12 col-md-4">
 					<div class="d-flex flex-column align-items-center">
 						<div class="icons d-flex justify-content-center align-items-center">
-							<img
-								class="img-fluid"
-								src="../assets/images/icons/svg_24h-4.svg"
-								alt="consultas 24 por 7" />
+							<img class="img-fluid" src="../assets/images/icons/svg_24h-4.svg" alt="consultas 24 por 7" />
 						</div>
 						<div class="text-center px-4">
 							<h3 class="fw-bold py-3 m-0">Consultas 24/7</h3>
@@ -38,9 +53,7 @@ import Servicos from "~/pages/servicos.vue"
 				<div class="col-12 col-md-4">
 					<div class="d-flex flex-column align-items-center">
 						<div class="icons d-flex justify-content-center align-items-center">
-							<img
-								class="img-fluid"
-								src="../assets/images/icons/svg_facil_utilizacao-4.svg"
+							<img class="img-fluid" src="../assets/images/icons/svg_facil_utilizacao-4.svg"
 								alt="Consultas fácil e confiável" />
 						</div>
 						<div class="text-center px-4">
@@ -55,9 +68,7 @@ import Servicos from "~/pages/servicos.vue"
 				<div class="col-12 col-md-4">
 					<div class="d-flex flex-column align-items-center">
 						<div class="icons d-flex justify-content-center align-items-center">
-							<img
-								class="img-fluid"
-								src="../assets/images/icons/svg_preco_acessivel-4.svg"
+							<img class="img-fluid" src="../assets/images/icons/svg_preco_acessivel-4.svg"
 								alt="Preços acessíveis" />
 						</div>
 						<div class="text-center px-4">
@@ -71,25 +82,22 @@ import Servicos from "~/pages/servicos.vue"
 			</div>
 		</section>
 
-		<Servicos />
+		<Servicos @modal-exibition="modalDialog"/>
 
-		<section class="container-fluid d-flex low-bg-image-about d-flex flex-column justify-content-center pt-5 "
+		<section class="container-fluid d-flex low-bg-image-about flex-column justify-content-center pt-5 "
 			id="sobre">
-			<h1 class="py-2 text-center  mb-5"> Sobre </h1>
+			<h1 class="py-2 text-center text-light mb-5"> Sobre </h1>
 			<div class="container d-flex vh-lg-60">
 				<div class="row flex-md-column flex-lg-row align-items-center">
-					<div class="col-12 col-md-6 fs-5">
-						<p class="text-center text-lg-start  "> A Autocredit é uma empresa que atua no mercado de consulta veicular
-							e
-							análise de
-							credito,
-							sempre trabalhando para satisfazer as necessidades de seus clientes, trazendo consultas
-							atualizadas, segura e confiável, contando com uma vasta base de dados robusta e segura.
+					<div class="col-12 col-md-12 fs-5">
+						<p class="text-center fs-5 fs-sm-3 text-light "> 
+							A Autocredit é uma empresa altamente especializada e confiável que se destaca no mercado de consultas veiculares e análise de crédito. Com um compromisso inabalável com a satisfação do cliente, a empresa se esforça continuamente para atender às diversas necessidades de seus clientes de maneira excepcional. Sua abordagem focada em oferecer consultas atualizadas, seguras e confiáveis estabelece um padrão elevado no setor.
+Uma das características distintivas da Autocredit é a sua ampla e sólida base de dados. Essa base de dados é o alicerce que permite à empresa fornecer informações detalhadas e precisas sobre veículos e dados de crédito. A robustez e a segurança dessa base de dados asseguram que os clientes possam confiar nas informações e análises apresentadas, tornando a Autocredit uma escolha confiável para quem busca informações confiáveis no campo automotivo e financeiro.
 						</p>
 					</div>
-					<div class="col-12 col-md-6">
+					<!-- <div class="col-12 col-md-6">
 						<img class="img-fluid" src="../assets/images/car_blue.png" alt="carro azul">
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>
@@ -102,9 +110,12 @@ import Servicos from "~/pages/servicos.vue"
 					alt="Icone de whats app flutuante ">
 			</a>
 		</div>
-	</main>
 
+		<Modal :content="contentItem" />
+	</main>
 </template>
+
+
 
 <style scoped>
 .vh-lg-60 {
@@ -146,11 +157,11 @@ import Servicos from "~/pages/servicos.vue"
 
 
 .low-bg-image-about {
-	--bg-image: url("../assets/images/bg-squares.svg");
-	--bg-image-second: url("../assets/images/blue-triangles.svg");
+	/* --bg-image: url("../assets/images/bg-squares.svg");
+	--bg-image-second: url("../assets/images/blue-triangles.svg"); */
 	--bg-image-opacity-about: 0.25;
 
-	background-color: #FFF;
+	background-color: #202020;
 
 	background-repeat: no-repeat;
 

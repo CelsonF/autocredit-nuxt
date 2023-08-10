@@ -1,16 +1,73 @@
-<script setup lang="ts">
+<script lang="ts">
+import { defineComponent, onMounted, reactive, toRefs  } from "vue"
 import Navbar from "~/components/layout/navbar.vue"
 import Slide from "~/components/layout/slide.vue"
 
-const emailWebsite = 'autocreditconsultas@gmail.com'
-const phoneNumber = '(31)97362-0350'
+export default defineComponent({
+	components: {
+		Navbar,
+		Slide,
+	},
+	setup() {
+		const state = reactive({
+			emailWebsite:'autocreditconsultas@gmail.com',
+			phoneNumber:'+55 (31) 3146-4534',
+			cellPhoneNumber:'+55 (31) 97362-0350',
+			bgColor : '',
+			textColors : '',
+			imgLogo : true,
+			typeMenu:'',
+			toggleMenu:'',
+			actualYear: new Date().getFullYear()
+		})
+	
+		const scrollPage = (() => {
+			if(window.scrollY === 0 && window.outerWidth > 992) {
+				state.bgColor = "bg-transparent",
+				state.imgLogo = false,
+				state.typeMenu = "fixed-top"
+				state.textColors = 'text-white'
+				state.toggleMenu = 'text-white'
+			} else {
+				state.bgColor = "bg-light shadow-sm filter-glassmorfism",
+				state.textColors = "text-black",
+				state.toggleMenu = "text-black"
+				state.imgLogo = true
+			}
+		})
 
+		const getScrollY = (() => {
+			window.addEventListener('scroll', scrollPage)
+		})
+
+		const windowWitdhScreen = (() => {
+			if(window.outerWidth < 992 && window.scrollY === 0) {
+				state.bgColor = "bg-light shadow-sm filter-glassmorfism",
+				state.textColors = "text-black",
+				state.toggleMenu = "text-black"
+				state.imgLogo = true
+			}
+		})
+		
+
+		onMounted(() => {	
+			state.imgLogo = false
+			state.textColors = 'text-white'
+			state.toggleMenu = 'text-white'
+			state.typeMenu = "fixed-top"
+			getScrollY()
+			windowWitdhScreen()
+		})
+
+		return { ...toRefs(state),scrollPage,getScrollY,windowWitdhScreen}
+	},
+})
 
 </script>
 
 <template>
-	<header class="sticky-top">
-		<Navbar />
+	<header :class="typeMenu">
+		<Navbar :bg-menu="bgColor" :text-colors="textColors"  :img-logo="imgLogo" :toggle-menu="toggleMenu"/>
 	</header>
 	<slot />
 	<Slide />
@@ -30,10 +87,17 @@ const phoneNumber = '(31)97362-0350'
 								</a>
 							</p>
 							<p>
-								<a class="no-style" href="tel:31 97362-0350">
+								<a class="no-style" href="tel:+55 31 3146-4534">
 									<img class="icons-footer" src="../assets/images/icons/telefone-autocredit.svg"
 										alt="autocreditconsultas@gmail.com">
 									{{ phoneNumber }}
+								</a>
+							</p>
+							<p>
+								<a class="no-style" href="tel:+55 31 97362-0350">
+									<img class="icons-footer" src="../assets/images/icons/telefone-autocredit.svg"
+										alt="autocreditconsultas@gmail.com">
+									{{ cellPhoneNumber }}
 								</a>
 							</p>
 						</form>
@@ -47,8 +111,8 @@ const phoneNumber = '(31)97362-0350'
 					</div>
 				</div>
 
-				<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-					<p>© 2022 Autocredit . Todos os direitos reservados.</p>
+				<div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top">
+					<p>© {{ actualYear }} Autocredit . Todos os direitos reservados.</p>
 				</div>
 			</div>
 		</div>
