@@ -16,7 +16,7 @@
 					<a :class="textColors" class="nav-link" href="#sobre">Sobre</a>
 				</li>
 			</ul>
-			<a href="http://consultas.autocredit.com.br/" target="_blank"
+			<a href="http://autoc.painelconsultas.com/" target="_blank"
 				class="btn btn-outline-primary rounded-pill btn-blue-primary fw-light d-none d-lg-flex text-white">
 				<img src="../../assets/images/icons/icon-singin.svg" class="pe-2" width="24" height="24" alt="entrar" />
 				Acessar
